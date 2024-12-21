@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Define Tan Pearl font using the converted woff/woff2 file */
+@font-face {
+    font-family: 'Tan Pearl';  /* The name you will use in CSS */
+    src: url('/fonts/TAN-PEARL-Regular.woff') format('woff2'),
+         url('/fonts/TAN-PEARL-Regular.woff2') format('woff');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  /* Example: Add fallback fonts if Tan Pearl doesn't load */
+  body {
+    font-family: 'Tan Pearl', serif;
+  }
+  
+ 
