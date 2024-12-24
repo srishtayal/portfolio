@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
-  const [activeLink, setActiveLink] = useState('#');
+  const location = useLocation();
+  const [activeLink, setActiveLink] = useState(location.pathname || '/');
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
@@ -11,42 +13,42 @@ const Navbar = () => {
     <nav className="bg-transparent fixed top-0 left-0 right-0 z-10 rounded-full mt-3 text-lg font-body">
       <div className="flex justify-center items-center p-6 w-full">
         <div className="w-fit flex space-x-6 text-white gap-3">
-          <a
-            href="#"
+          <Link
+            to="/"
             className={`${
-              activeLink === '#' ? 'text-gray-400 border-b-2 border-gray-400' : 'hover:text-gray-400'
+              activeLink === '/' ? 'text-gray-400 border-b-2 border-gray-400' : 'hover:text-gray-400'
             } transition-colors duration-300`}
-            onClick={() => handleLinkClick('#')}
+            onClick={() => handleLinkClick('/')}
           >
             Work
-          </a>
-          <a
-            href="#about"
+          </Link>
+          <Link
+            to="/about"
             className={`${
-              activeLink === 'about' ? 'text-gray-400 border-b-2 border-gray-400' : 'hover:text-gray-400'
+              activeLink === '/about' ? 'text-gray-400 border-b-2 border-gray-400' : 'hover:text-gray-400'
             } transition-colors duration-300`}
-            onClick={() => handleLinkClick('about')}
+            onClick={() => handleLinkClick('/about')}
           >
             About
-          </a>
-          <a
-            href="#designs"
+          </Link>
+          <Link
+            to="/designs"
             className={`${
-              activeLink === 'designs' ? 'text-gray-400 border-b-2 border-gray-400' : 'hover:text-gray-400'
+              activeLink === '/designs' ? 'text-gray-400 border-b-2 border-gray-400' : 'hover:text-gray-400'
             } transition-colors duration-300`}
-            onClick={() => handleLinkClick('designs')}
+            onClick={() => handleLinkClick('/designs')}
           >
             Designs
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            to="/contact"
             className={`${
-              activeLink === 'contact' ? 'text-gray-400 border-b-2 border-gray-400' : 'hover:text-gray-400'
+              activeLink === '/contact' ? 'text-gray-400 border-b-2 border-gray-400' : 'hover:text-gray-400'
             } transition-colors duration-300`}
-            onClick={() => handleLinkClick('contact')}
+            onClick={() => handleLinkClick('/contact')}
           >
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

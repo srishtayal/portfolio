@@ -1,15 +1,21 @@
-import Hero from './components/Hero'
-import Navbar from './components/Navbar'
-import './index.css'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import Hero from './components/Hero';
+import About from './components/About';
+import Navbar from './components/Navbar';
+import './index.css';
 
 function App() {
-
   return (
-    <div className='bg-grey'>
-      <Navbar />
-      <Hero />
-    </div>
-  )
+    <Router>
+      <div className='bg-black'>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;
