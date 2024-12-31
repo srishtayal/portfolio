@@ -8,8 +8,7 @@ function About() {
             </h1>
             <div className="flex flex-col md:flex-col sm:flex-col lg:flex-row items-center p-10 sm:p-20 gap-12">
                 <div 
-                    className="bg-[url('/photos/srishti.jpeg')] bg-cover rounded-full bg-no-repeat bg-center w-60 h-60 sm:w-60 sm:h-60 md:w-80 md:h-80 lg:w-128 lg:h-96 shadow-lg" 
-                    id="image"
+                    className="bg-[url('/photos/srishti.jpeg')] bg-cover rounded-full bg-no-repeat bg-center w-60 h-60 sm:w-60 sm:h-60 md:w-80 md:h-80 lg:w-128 lg:h-96 shadow-lg"
                 >
                 </div>
                 <div className="text-left">
