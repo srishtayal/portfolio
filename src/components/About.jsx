@@ -1,4 +1,5 @@
 import React from 'react';
+import Hexagon from './subcomponent/Hexagon';
 
 function About() {
     return (
@@ -22,6 +23,7 @@ function About() {
                     </p>
                 </div>
             </div>
+            <Hexagon />
         </div>
     );
 }

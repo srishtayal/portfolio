@@ -3,7 +3,6 @@ import React from 'react';
 function Hero() {
     return (
         <div className="min-h-screen p-10 bg-[url('/photos/gradient.png')] bg-cover bg-center flex flex-col justify-center items-center px-4 sm:px-6 md:px-8">
-            {/* Heading */}
             <h1 className="text-4xl pt-52 sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#8cd49f] font-heading text-center">
                 Hi, I'm Srishti.
                 <span className='block mt-5'>
@@ -11,15 +10,12 @@ function Hero() {
                 </span>
             </h1>
 
-            {/* Subtext */}
             <p className="pt-10 font-body text-lg sm:text-xl md:text-2xl text-white text-center leading-relaxed">
                 A sophomore at NSUT, passionate about building 
                 <br /> innovative web applications.
             </p>
-            
-            {/* Bento Grid Section */}
+    
                 <div className="w-full mx-auto 2xl:max-w-7xl flex flex-col justify-center py-24 relative p-8">
-                    {/* Starts component */}
                     <div className="max-w-7xl mt-12 pt-12 border-neutral-200 mx-auto text-balance text-gray-500">
                         <div className="grid grid-cols-1 md:grid-cols-4 gap-4 lg:grid-cols-6">
                             <div className="bg-gray-100 ring-1 ring-inset ring-gray-200 shadow p-6 rounded-xl md:col-span-2 md:row-span-2">
@@ -88,7 +84,6 @@ function Hero() {
                             </div>
                         </div>
                     </div>
-                    {/* Ends component */}
                 </div>
         </div>
     );

@@ -10,9 +10,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-transparent fixed top-0 left-0 right-0 z-10 rounded-full mt-3 text-lg font-body">
-      <div className="flex justify-center items-center p-6 w-full">
-        <div className="w-fit flex space-x-6 text-white gap-3">
+    <nav className="fixed top-0 left-0 right-0 z-10 mt-3 text-lg font-body">
+      <div className="flex justify-center items-center p-3 w-full">
+        <div className="w-fit flex items-center space-x-7 text-white py-3 px-4 sm:px-8 bg-transparent backdrop-blur-xl rounded-full shadow-lg">
           <Link
             to="/"
             className={`${
