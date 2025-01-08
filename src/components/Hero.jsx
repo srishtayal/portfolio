@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './subcomponent/Footer';
 
 function Hero() {
     return (
@@ -85,6 +86,7 @@ function Hero() {
                         </div>
                     </div>
                 </div>
+                <Footer />
         </div>
     );
 }

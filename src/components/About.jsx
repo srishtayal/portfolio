@@ -1,10 +1,12 @@
 import React from 'react';
 import Hexagon from './subcomponent/Hexagon';
+import Footer from './subcomponent/Footer';
+
 
 function About() {
     return (
         <div className="overflow-x-hidden min-h-screen p-10 bg-[url('/photos/gradient.png')] bg-cover bg-center flex flex-col justify-center items-center px-4 sm:px-6 md:px-8">
-            <h1 className="text-4xl pt-40 sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#8cd49f] font-heading text-center">
+            <h1 className="text-4xl pt-52 sm:text-5xl md:text-6xl lg:text-7xl font-bold text-[#8cd49f] font-heading text-center">
                 I'm Srishti.
             </h1>
             <div className="flex flex-col md:flex-col sm:flex-col lg:flex-row items-center p-10 sm:p-20 gap-12">
@@ -24,6 +26,7 @@ function About() {
                 </div>
             </div>
             <Hexagon />
+            <Footer />
         </div>
     );
 }

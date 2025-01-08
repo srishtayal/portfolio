@@ -32,15 +32,6 @@ const Navbar = () => {
             About
           </Link>
           <Link
-            to="/designs"
-            className={`${
-              activeLink === '/designs' ? 'text-gray-400 border-b-2 border-gray-400' : 'hover:text-gray-400'
-            } transition-colors duration-300`}
-            onClick={() => handleLinkClick('/designs')}
-          >
-            Designs
-          </Link>
-          <Link
             to="/contact"
             className={`${
               activeLink === '/contact' ? 'text-gray-400 border-b-2 border-gray-400' : 'hover:text-gray-400'
