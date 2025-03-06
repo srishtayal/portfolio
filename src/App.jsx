@@ -4,11 +4,12 @@ import About from './components/About';
 import Navbar from './components/subcomponent/Navbar';
 import './index.css';
 import Contact from './components/Contact';
+import Grid from './components/subcomponent/Grid';
 
 function App() {
   return (
     <Router>
-      <div className='bg-black'>
+      <div className='bg-[#18181B]'>
         <Navbar />
         <Routes>
           <Route path="/" element={<Hero />} />
