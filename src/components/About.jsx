@@ -32,7 +32,7 @@ export default function About() {
                   I'm a Sophomore at NSUT, pursuing Engineering in Electronics.
                 </h2>
                 <p className="text-xl mt-2 font-body text-white">
-                  I'm passionate about technology and innovation, I focus on web development, AI solutions, and game design. 
+                  I'm passionate about technology and innovation, I focus on web development, AI solutions, and innovative solutions. 
                   I actively participate in hackathons, building impactful projects that address real-world challenges through 
                   creativity, problem-solving, and continuous learning.
                 </p>
