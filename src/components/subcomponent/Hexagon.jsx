@@ -11,31 +11,31 @@ const technologies = [
   { name: 'Node', logo: 'https://static-00.iconduck.com/assets.00/node-js-icon-1817x2048-g8tzf91e.png' },
   { name: 'Express', logo: 'https://www.peanutsquare.com/wp-content/uploads/2024/04/Express.png' },
   { name: 'Python', logo: 'https://cdn.freebiesupply.com/logos/large/2x/python-5-logo-png-transparent.png' },
-//   { name: 'MongoDB', logo: 'https://images.seeklogo.com/logo-png/48/2/mongodb-logo-png_seeklogo-481256.png?v=1957221918686265648' },
-  { name: 'MySQL', logo: 'https://pngimg.com/d/mysql_PNG23.png' },
+  { name: 'MongoDB', logo: 'https://images.seeklogo.com/logo-png/48/2/mongodb-logo-png_seeklogo-481256.png?v=1957221918686265648' },
+  { name: 'MySQL', logo: 'https://pngimg.com/d/mysql_PNG23.png' }, 
 ];
 
 const Hexagon = () => {
   return (
-    <div className="flex flex-wrap justify-center gap-6 p-4">
+    <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3 md:gap-4 p-4">
       {technologies.map((tech, index) => (
         <div
           key={index}
-          className="relative w-24 h-20 bg-gray-800 flex items-center shadown-md justify-center text-white hover:scale-110 transition-transform"
+          className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex items-center justify-center hover:scale-110 transition-transform shadow-xl"
           style={{
-            clipPath:
-              'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)',
+            clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)',
+            background: 'rgba(255, 255, 255, 0.1)',
+            backdropFilter: 'blur(10px)',
+            WebkitBackdropFilter: 'blur(10px)',
+            boxShadow: '0 4px 10px rgba(0, 0, 0, 0.3)',
           }}
         >
-          <img
-            src={tech.logo}
-            alt={tech.name}
-            className="w-10 h-10 object-contain"
-          />
+          <img src={tech.logo} alt={tech.name} className="w-10 h-10 object-contain" />
         </div>
       ))}
     </div>
   );
 };
+
 
 export default Hexagon;
