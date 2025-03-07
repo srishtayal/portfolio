@@ -1,6 +1,5 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
-import Footer from './subcomponent/Footer';
 import { AuroraBackground } from "./ui/aurora-background";
 import { motion } from "framer-motion";
 
@@ -97,12 +96,10 @@ const Contact = () => {
           </form>
         </div>
 
-        {/* Status Message */}
         {statusMessage && (
           <p className="mt-4 text-lg text-white font-body font-semibold">{statusMessage}</p>
         )}
       </div>
-      <Footer />
     </div>
         </motion.div>
       </AuroraBackground>

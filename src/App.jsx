@@ -5,6 +5,7 @@ import Navbar from './components/subcomponent/Navbar';
 import './index.css';
 import Contact from './components/Contact';
 import Grid from './components/subcomponent/Grid';
+import Footer from './components/subcomponent/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

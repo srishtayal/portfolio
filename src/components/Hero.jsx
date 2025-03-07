@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from './subcomponent/Footer';
 import Demo from './subcomponent/Intro';
 import Grid from './subcomponent/Grid';
 
@@ -14,7 +13,6 @@ function Hero() {
                     </div>
                 </div>
             </div>
-            <Footer />
         </div>
     );
 }

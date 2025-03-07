@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import React from "react";
 import { AuroraBackground } from "./ui/aurora-background";
 import Hexagon from "./subcomponent/Hexagon";
-import Footer from "./subcomponent/Footer";
 
 export default function About() {
   return (
@@ -40,7 +39,6 @@ export default function About() {
               </div>
             </div>
             <Hexagon />
-            <Footer />
           </div>
         </motion.div>
       </AuroraBackground>
